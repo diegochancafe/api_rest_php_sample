@@ -1,0 +1,13 @@
+{
+    "name": "diegochancafe/api_rest_php",
+    "authors": [
+        {
+            "name": "Diego Uriarte Chancafe",
+            "email": "chancaferonaldo78@gmail.com"
+        }
+    ],
+    "require": {
+        "aura/sql": "^5.0",
+        "firebase/php-jwt": "^6.4"
+    }
+}

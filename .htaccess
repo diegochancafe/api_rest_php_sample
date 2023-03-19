@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+
+   Options +FollowSymLinks -MultiViews
+
+   RewriteEngine on
+
+   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}\.php -f
+
+   RewriteRule ^(.*)$ $1.php [L]
+   RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+   
+</IfModule>
