@@ -8,6 +8,7 @@ require __DIR__ . '/../core/functions.php';
 use Aura\Sql\ExtendedPdo;
 use Firebase\JWT\Key;
 
+
 // --
 $pdo = new ExtendedPdo(
     'mysql:host=' . $config['database']['db_host'] . 
